@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Game Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function checkPassword(event) {
+            event.preventDefault();
+            const password = prompt("Enter password to access Portfolio Extra:");
+            if (password === "banana123") {
+                window.open("https://djkdjkm.github.io/portfolioextra/", "_blank");
+            } else if (password !== null) {
+                alert("Incorrect password!");
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -146,7 +157,7 @@
                 </div>
                 <h3>Portfolio Extra</h3>
                 <p>Additional portfolio showcase</p>
-                <a href="https://djkdjkm.github.io/portfolioextra/" target="_blank" class="play-button">Play Game</a>
+                <a href="#" onclick="checkPassword(event)" class="play-button">Play Game</a>
             </div>
         </main>
     </div>
